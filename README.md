@@ -15,3 +15,19 @@
 - 間違えて作成した場合 `destroy` を使用して元に戻す
     - `bin/rails destroy controller pages_controller`
 
+## association
+
+### model
+
+- `has_many :recipes` 
+- `belongs_to :chef`
+
+### rails console
+
+- `Chef.new(...)` im memory object 
+- `Chef.create(...)` on create db
+
+- `Chef.all` show all of Chef
+
+- `chef_object.recipes.build(....)` created associate recipe
+- `chef_object.recipes` show all of associated recipes
